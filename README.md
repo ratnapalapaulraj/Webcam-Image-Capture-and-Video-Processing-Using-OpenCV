@@ -42,12 +42,46 @@ Resize the frame and rotate it using OpenCV functions, then display the processe
 
 ## 💻 Program
 
+```python
+import cv2
+
+# Initialize webcam
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+
+    if not ret:
+        print("Cannot access webcam")
+        break
+
+    # i) Save frame as JPG
+    cv2.imwrite("captured_image.jpg", frame)
+
+    # ii) Display the original video
+    cv2.imshow("Original Video", frame)
+
+    # iii) Display resized video
+    resized = cv2.resize(frame, (640, 480))
+    cv2.imshow("Resized Video", resized)
+
+    # iv) Rotate and display video
+    rotated = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
+    cv2.imshow("Rotated Video", rotated)
+
+    # Press Q to stop
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release webcam and close windows
+cap.release()
+cv2.destroyAllWindows()
+```
+
 ### Developed By:
-**Name:** ____________________________  
-
+**Name:** RATNAPALA P
 ### Register No:
-____________________________  
-
+212225100037
 ---
 
 ## Output
@@ -57,12 +91,15 @@ Captured image is saved as `captured_image.jpg`
 
 ### ii) Display the video
 Live webcam video is displayed
+<img width="463" height="576" alt="image" src="https://github.com/user-attachments/assets/469e43a6-d44b-44ba-86ab-4fbfbc4d2fa8" />
 
 ### iii) Display the video by resizing the window
 Video is shown in resized resolution (640 × 480)
+<img width="587" height="528" alt="image" src="https://github.com/user-attachments/assets/2bd7b9a1-5b2f-408d-bc3c-951fd97f38ba" />
 
 ### iv) Rotate and display the video
 Video is displayed after rotation (90° clockwise)
+<img width="346" height="576" alt="image" src="https://github.com/user-attachments/assets/b5acda85-49c2-4597-a51a-299f1430a15a" />
 
 ---
 
