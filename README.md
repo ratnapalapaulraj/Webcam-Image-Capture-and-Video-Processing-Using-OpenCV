@@ -1,5 +1,8 @@
 # Image Capture and Video Processing Using OpenCV
-
+### Developed By:
+**Name:** RATNAPALA P
+### Register No:
+212225100037
 ---
 
 ## Aim
@@ -77,11 +80,6 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 ```
-
-### Developed By:
-**Name:** RATNAPALA P
-### Register No:
-212225100037
 ---
 
 ## Output
