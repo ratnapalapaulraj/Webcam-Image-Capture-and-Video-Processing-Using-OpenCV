@@ -86,6 +86,8 @@ cv2.destroyAllWindows()
 
 ### i) Write the frame as JPG image
 Captured image is saved as `captured_image.jpg`
+<img width="1076" height="515" alt="image" src="https://github.com/user-attachments/assets/9954d2a5-af55-43ee-ad94-9916d8e33b53" />
+
 
 ### ii) Display the video
 Live webcam video is displayed original.
