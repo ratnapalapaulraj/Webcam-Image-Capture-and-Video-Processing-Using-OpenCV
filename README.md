@@ -88,7 +88,7 @@ cv2.destroyAllWindows()
 Captured image is saved as `captured_image.jpg`
 
 ### ii) Display the video
-Live webcam video is displayed
+Live webcam video is displayed       .
 <img width="463" height="576" alt="image" src="https://github.com/user-attachments/assets/469e43a6-d44b-44ba-86ab-4fbfbc4d2fa8" />
 
 ### iii) Display the video by resizing the window
